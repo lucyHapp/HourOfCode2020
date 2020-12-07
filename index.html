@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: unset;
+    }
+
+    h1,
+    h2 {
+      color: green;
+
+    }
+
+    #parent-container {
+      width: 100vw;
+      height: 100vh;
+      padding: 20px;
+    }
+
+    #title-container {
+      border: 1px solid black;
+      height: 20%;
+      width: 100%;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .list-container {
+      border: 1px solid black;
+      width: 50%;
+      height: 80%;
+      display: inline-block;
+      position: relative;
+      padding: 20px;
+      text-align: center;
+    }
+
+    #left-container {
+      float: left;
+    }
+
+    #right-container {
+      float: right;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="parent-container">
+    <div id="title-container">
+      <h1>What I Want for Christmas</h1>
+    </div>
+    <div class="list-container" id="left-container">
+      <h2>Dylan</h2>
+    </div>
+    <div class="list-container" id="right-container">
+      <h2>Tyler</h2>
+    </div>
+  </div>
+</body>
+
+</html>
