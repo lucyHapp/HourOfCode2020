@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/ff806e6809.js" crossorigin="anonymous"></script>
   <title>Document</title>
   <style>
     * {
@@ -13,7 +14,7 @@
 
     h1,
     h2 {
-      color: green;
+      color: darkgreen;
 
     }
 
@@ -21,6 +22,7 @@
       width: 100vw;
       height: 100vh;
       padding: 20px;
+      background-color: darkblue;
     }
 
     #title-container {
@@ -28,7 +30,10 @@
       height: 20%;
       width: 100%;
       padding: 20px;
-      text-align: center;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      background-color: lightblue;
     }
 
     .list-container {
@@ -39,6 +44,8 @@
       position: relative;
       padding: 20px;
       text-align: center;
+      background-color: lightblue;
+
     }
 
     #left-container {
@@ -48,13 +55,21 @@
     #right-container {
       float: right;
     }
+
+    .gift-img {
+      color: red;
+      font-size: 2rem;
+      padding: 4rem;
+    }
   </style>
 </head>
 
 <body>
   <div id="parent-container">
     <div id="title-container">
+      <i class="gift-img fas fa-gifts"></i>
       <h1>What I Want for Christmas</h1>
+      <i class="gift-img fas fa-gifts"></i>
     </div>
     <div class="list-container" id="left-container">
       <h2>Dylan</h2>
