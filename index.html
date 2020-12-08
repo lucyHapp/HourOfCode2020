@@ -5,17 +5,22 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://kit.fontawesome.com/ff806e6809.js" crossorigin="anonymous"></script>
-  <title>Document</title>
+  <title> What I Want for Christmas</title>
   <style>
     * {
       box-sizing: border-box;
       margin: unset;
     }
 
-    h1,
-    h2 {
-      color: black;
+    h1 {
+      color: red;
+      animation-name: headerAnim;
+      animation-duration: 5s;
+      animation-iteration-count: infinite;
+    }
 
+    h2 {
+      padding: 10px;
     }
 
     #parent-container {
@@ -45,21 +50,69 @@
       padding: 20px;
       text-align: center;
       background-color: white;
-
     }
 
     #left-container {
       float: left;
+      background: url(zelda.jpg) center no-repeat;
+
+    }
+
+    #left-container h2 {
+      color: blue;
+      text-shadow: 3px 3px 10px black;
+
+    }
+
+    #right-container h2 {
+      color: rgb(7, 255, 7);
+      text-shadow: 3px 3px 10px white;
     }
 
     #right-container {
       float: right;
+      background-color: black;
     }
 
     .gift-img {
-      color: black;
+      color: green;
       font-size: 2rem;
       padding: 4rem;
+    }
+
+    .left-list {
+      color: red;
+      font-size: 1.3em;
+    }
+
+    .right-list {
+      color: red;
+      font-size: 1.3em;
+      animation-name: anim;
+      animation-duration: 1.5s;
+      animation-iteration-count: infinite;
+    }
+
+    @keyframes anim {
+      75% {
+        color: red;
+      }
+
+      100% {
+        color: black;
+      }
+    }
+
+    @keyframes headerAnim {
+      0% {
+        transform: rotateY(-180deg);
+
+      }
+
+      100% {
+        transform: rotateY(180deg);
+
+      }
     }
   </style>
 </head>
@@ -68,12 +121,25 @@
   <div id="parent-container">
     <div id="title-container">
       <i class="gift-img fas fa-gifts"></i>
-      <h1>What I Want for Christmas</h1>
+      <h1>What I Want For Christmas From Dylan & Tyler G</h1>
       <i class="gift-img fas fa-gifts"></i>
     </div>
     <div class="list-container" id="left-container">
+      <h2>Tyler</h2>
+      <ul class="left-list">
+        <li>alot of vBucks (Gift Card)</li>
+        <li>Combiner Transformer</li>
+        <li>Marval Smashers</li>
+        <li>Marval Lego Set</li>
+      </ul>
     </div>
     <div class="list-container" id="right-container">
+      <h2>Dylan</h2>
+      <ul class="right-list">
+        <li>iPad - with the contents</li>
+        <li>Lego Architecture</li>
+        <li>Lego Techno Set</li>
+      </ul>
     </div>
   </div>
 </body>
